@@ -1,0 +1,138 @@
+/* Styles for all pages */
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+    background-size: cover;
+    background-position: fixed;
+ 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.header {
+    display:flex;
+  }
+  header >div{
+      flex-grow: 1;
+   }
+  
+  .logo {
+     height:13vh;
+     width:auto;
+     padding:1%;
+     border-radius: 2cm;
+  }
+  
+  .main-nav{
+      display:flex;
+  }
+  .main-nav li{
+      
+      list-style: none;
+      margin-bottom: 0;
+  }
+  .main-nav li a{
+      padding-right:0.9em;
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: black;
+      
+  }
+  
+/*main section*/
+main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d0e0d;
+}
+
+
+
+
+footer{
+    grid-area: footer;/* Placing the footer in the designated grid area */
+    display: flex;/* Making the elements inside the footer to be displayed in a row */
+    align-items: center;
+    background-color: #f1f5f7;
+    color: #0e0c0c;
+}
+footer div{
+    padding:10px;
+}
+body > footer > section > h4{
+  text-align: center;
+}
+body > footer > section > div{
+  display : grid;/* Creating a grid layout for the elements inside the footer section */
+  grid-template-columns: repeat(4,25%);
+  padding-left: 100px;
+  font-size: 13px;
+}
+body > footer > section > p{
+  text-align: center;
+  padding: 20px 200px;
+  font-size: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
